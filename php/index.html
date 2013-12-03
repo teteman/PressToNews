@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js">
+    <!DOCTYPE HTML>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <link rel="stylesheet" media="all" href="css/windows_modal.css"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a.login-window').click(function() {
+
+                // Getting the variable's value from a link 
+                var loginBox = $(this).attr('href');
+
+                //Fade in the Popup and add close button
+                $(loginBox).fadeIn(300);
+
+                //Set the center alignment padding + border
+                var popMargTop = ($(loginBox).height() + 24) / 2;
+                var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+                // Add the mask to body
+                $('body').append('<div id="mask"></div>');
+                $('#mask').fadeIn(300);
+
+                return false;
+            });
+
+            // When clicking on the button close or the mask layer the popup closed
+            $('a.close, #mask').live('click', function() {
+                $('#mask , .login-popup').fadeOut(300, function() {
+                    $('#mask').remove();
+                });
+                return false;
+            });
+        });
+    </script>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>PRESSTONEWS</title>
+        <link rel="stylesheet" media="all" href="css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="js/jquery-1.6.4.min.js"></script>
+        <!--  <script src="js/less-grid-4.js"></script> -->
+        <script src="js/custom.js"></script>
+        <script src="js/tabs.js"></script>
+        <!-- Masonry -->
+        <script src="js/masonry.min.js" ></script>
+        <script src="js/imagesloaded.js" ></script>
+        <!-- ENDS Masonry -->
+        <!-- Tweet -->
+        <link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
+        <script src="js/tweet/jquery.tweet.js" ></script> 
+        <!-- ENDS Tweet -->
+        <!-- superfish -->
+        <link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+        <script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+        <script  src="js/superfish-1.4.8/js/superfish.js"></script>
+        <script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+        <!-- ENDS superfish -->
+        <!-- prettyPhoto -->
+        <script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+        <link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+        <!-- ENDS prettyPhoto -->
+        <!-- poshytip -->
+        <link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+        <link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+        <script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+        <!-- ENDS poshytip -->
+        <!-- GOOGLE FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Allan:700' rel='stylesheet' type='text/css'>
+        <!-- Flex Slider -->
+        <link rel="stylesheet" href="css/flexslider.css" >
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- ENDS Flex Slider -->
+        <!-- Lessgrid -->
+        <link rel="stylesheet" media="all" href="css/lessgrid.css"/>
+        <!-- modernizr -->
+        <script src="js/modernizr.js"></script>
+    </head>
+
+    <body lang="en">
+
+
+        <!-- mobile-nav -->
+        <div id="mobile-nav-holder">
+            <div class="wrapper">
+                <div id="nav-open"><a href="#login-box" class="login-window">Login / Sign In</a></div>
+            </div>
+        </div>
+        <!-- ENDS mobile-nav -->
+
+        <header>
+            <div class="wrapper">
+
+                <a href="index.html" id="logo"><img  src="img/logo.png" alt="Tandem"></a>
+
+                <nav>
+                    <ul id="nav" class="sf-menu">
+                        <li><a href="#login-box" class="login-window">Login / Sign In</a></li>           
+                    </ul>
+                </nav>
+
+                <div class="clearfix"></div>
+
+            </div>
+        </header>
+
+        <!-- DIV LOGIN -->
+        <div id="login-box" class="login-popup">
+            <a href="#" class="close"><img src="img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+            <div id="login_wrapper">
+            <form method="post" class="signin" action="#">
+                <h1>Presstonews</h1>
+                <br>
+                <fieldset class="textbox">
+                    <label class="username">
+                        <span>Username or email</span>
+                        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+                    </label>
+
+                    <label class="password">
+                        <span>Password</span>
+                        <input id="password" name="password" value="" type="password" placeholder="Password">
+                    </label>
+
+                    <button class="submit button" type="button">Sign in</button>
+
+                    <p>
+                        <a class="forgot" href="#">Forgot your password?</a>
+                    </p>
+                    <a href="#">Registrate</a>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div id="main">
+
+            <!-- social -->
+            <div id="social-bar">
+                <ul>
+                    <li><a href="http://www.facebook.com/"  title="Become a fan"><img src="img/social/facebook_32.png"  alt="Facebook" /></a></li>
+                    <li><a href="http://www.twitter.com/" title="Follow my tweets"><img src="img/social/twitter_32.png"  alt="Facebook" /></a></li>
+                    <li><a href="http://www.google.com/"  title="Add to the circle"><img src="img/social/google_plus_32.png" alt="Facebook" /></a></li>
+                </ul>
+            </div>
+            <!-- ENDS social -->
+
+
+
+            <!-- Content -->
+            <div id="content">
+                <!-- slider -->
+                <div class="flexslider home-slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/slides/01.jpg" alt="alt text" />
+                            <p class="flex-caption">Informatica </p>
+                        </li>
+                        <li>
+                            <img src="img/slides/02.jpg" alt="alt text" />
+                            <p class="flex-caption">Deportes</p>
+                        </li>
+                        <li>
+                            <img src="img/slides/03.jpg" alt="alt text" />
+                            <p class="flex-caption">Motor</p>
+                        </li>
+                        <li>
+                            <img src="img/slides/04.jpg" alt="alt text" />
+                            <p class="flex-caption">Economia</p>
+                        </li>
+                        <li>
+                            <img src="img/slides/05.jpg" alt="alt text" />
+                            <p class="flex-caption">Industria</p>
+                        </li>
+                        <li>
+                            <img src="img/slides/06.jpg" alt="alt text" />
+                            <p class="flex-caption">Social</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shadow-slider"></div>
+                </body>
+                </html>
