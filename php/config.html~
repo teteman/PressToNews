@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Q8200" >
+
+        <title>Configuracion</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Add custom CSS here -->
+        <link href="css/business-casual.css" rel="stylesheet">
+
+        <!-- Add custom JS here -->
+        <script type="text/javascript" src="js/funciones.js"></script>
+
+
+
+        <script language="javascript">
+            function ocultar_menu() {
+                menu_desplegable.click();
+            }
+        </script>
+        <script language="javascript">
+            function subir() {
+                if (document.documentElement.scrollTop < 10) {
+                    window.scrollTo(0, 0);
+                } else {
+                    window.scrollBy(0, -10);
+                    setTimeout("subir()", 10);
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="midivfijo">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button id="menu_desplegable" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"onclick="subir()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="news.html">PressToNews</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class=" text-left collapse navbar-collapse ">
+                    <a class="navbar-brand" href="news.html">PressToNews</a>
+                    <div class="text-right"><a href="config.html"><img src="glyphicons_136_cogwheel.png"> </a></div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+            </nav>
+        </div> 
+
+
+        <div class="col-lg-12  col-sm-12">
+            <br>
+            <br>
+            <div class="col-lg-3  col-sm-3 col-sm-offset-0 text-left">
+                <nav class="navbar navbar-nav" role="navigation">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar">
+                            <li><a href="#" onclick="muestra_oculta(1);
+                ocultar_menu()">Informacion Adicional</a></li>
+                            <li><a href="#" onclick="muestra_oculta(2);
+                ocultar_menu()">Elige Categorias</a></li>
+                            <li><a href="#" onclick="muestra_oculta(3);
+                ocultar_menu()">Ayuda</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+
+            <div class="col-lg-9 col-sm-9 col-xs-12 text-left" id="aditional_info">
+                <br>
+                <div class="col-sm-offset-0 col-lg-offset-0 col-xs-offset-0">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <form class="form-horizontal" >
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 text-right">
+                            <label class="control-label col-lg-2 col-sm-2 col-xs-3">Nick:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="email" class="form-control-2" placeholder="email@example.com">
+                            </div>
+                            <div class="col-lg-9 col-lg-offset-1 col-sm-10 col-xs-11  col-xs-offset-1">
+                                <hr>
+                            </div>
+                        </div>    
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 text-right">
+                            <label class="control-label col-lg-2 col-sm-2 col-xs-3">Name:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="email" class="form-control-2" placeholder="Example">
+                            </div>
+                        </div> 
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12  text-right">
+                            <label class="control-label col-lg-2 col-sm-2 col-xs-3">Subname:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="email" class="form-control-2" placeholder="Example">
+                            </div>
+                            <div class="col-lg-9 col-lg-offset-1 col-sm-10 col-xs-11  col-xs-offset-1">
+                                <hr>
+                            </div>
+                        </div>    
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0  col-xs-12 text-right">
+                            <label class="control-label col-lg-2 col-sm-2 col-xs-3">phone:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="tel" class="form-control-2" placeholder="000 00 00 00">
+                            </div>
+                        </div>  
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12  text-right">
+                            <label class="control-label col-lg-2 col-sm-2 col-xs-3">Mobile phone:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="tel" class="form-control-2" placeholder="000 00 00 00">
+                            </div>
+                            <div class="col-lg-9 col-lg-offset-1 col-sm-10 col-xs-11  col-xs-offset-1">
+                                <hr>
+                            </div>
+                        </div> 
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12  text-right">
+                            <label for="inputPassword" class="control-label col-lg-2 col-sm-2 col-xs-3">Password:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="password" class="form-control-2" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 text-right">
+                            <label for="inputPassword" class="control-label col-lg-2 col-sm-2 col-xs-3">Repeat:</label>
+                            <div class="col-lg-8 col-sm-9 col-xs-9">
+                                <input type="password" class="form-control-2" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 text-right">
+                            <div class=" control-label col-lg-2 col-sm-2 col-xs-3 col-lg-offset-7 col-sm-offset-6 col-xs-offset-5   ">
+                                <button type="button" class="btn btn-primary">Confirm your changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-9 col-sm-9 col-sm-offset-0 text-left" id="help">
+                <div class="col-sm-offset-0 col-lg-offset-0">
+                    <div class="text-right">
+                        <form role="form" class="col-lg-10 col-lg-offset-0 col-sm-12 col-sm-offset-0 text-right">
+                            <div class="row col-xs-offset-1">
+
+                                <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-11  col-xs-offset-0 text-left">
+                                    <hr>
+                                    <h2 class="intro-text text-center">Contacto</h2>
+                                    <label>Asunto</label>
+                                    <input type="text" class="form-control-2">
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-11  col-xs-offset-0 text-left">
+                                    <label>Mensaje</label>
+                                    <textarea class="form-control-2" rows="6"></textarea>
+                                </div>
+
+                                <div class="form-group col-lg-12 col-lg-offset-10  col-sm-12 col-sm-offset-10    col-xs-11  col-xs-offset-7 text-left">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-11  col-xs-offset-0 text-left">
+                                    <hr>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="col-lg-9 col-sm-9 col-sm-offset-0 text-left" id="choose_categories">
+                <div class="col-sm-offset-0 col-lg-offset-0">
+                    <div class="text-right">
+                        <form role="form" class="col-lg-10 col-lg-offset-0 col-sm-12 col-sm-offset-0 text-left">
+                            <div class="row col-xs-offset-1">
+
+                          <div class="form-group col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 col-xs-11  col-xs-offset-0">
+                                    <hr>
+                                <h2 class="intro-text text-center">Categorias</h2>
+                                <br>
+                            </div>
+                            <div class="btn-group col-lg-6 col-md-6 col-sm-12  col-xs-12 col-xs-0">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/deportes.png">&nbsp;&nbsp;Deportes </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-off">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/tiempo.png">&nbsp;&nbsp;Tiempo </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/economia.png">&nbsp;&nbsp;Economia </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/transportes.png">&nbsp;&nbsp;Transportes </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div><div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/redes_sociales.png">&nbsp;&nbsp;Social </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div><div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/motor.png">&nbsp;&nbsp;Motor </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div><div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/sonido.png">&nbsp;&nbsp;Cultura </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-group col-md-6 col-lg-6 col-sm-12  col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="control-label-2" ><img src="img/encuestas.png">&nbsp;&nbsp;Encuestas </label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Select</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <button  class="btn">Desselect</button>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-group  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+            <script type="text/javascript">
+            muestra_oculta(2);
+            </script>
+
+
+            <footer>
+                <div class="container  col-lg-12 col-sm-12 col-sm-offset-  col-lg-offset-0 text-left">
+
+                    <div class="container  col-lg-3 col-sm-3 col-sm-offset-1  col-lg-offset-0 text-left">
+                    </div>
+                    <div class="container  col-lg-2 col-sm-4 col-sm-offset-1  col-lg-offset-3  text-left">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <p>Copyright &copy; Company 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- JavaScript -->
+            <script src="js/jquery-1.10.2.js"></script>
+            <script src="js/bootstrap.js"></script>
+
+    </body>
+</html>
